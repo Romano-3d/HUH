@@ -1,0 +1,3 @@
+SimpleDateFormat ft new SimpleDateFormat ("yyyy.MM.dd '\n\b at' hh:mm:ssa ");
+
+System.out.println("Current Date:" + ft.format(date));
