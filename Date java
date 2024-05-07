@@ -1,3 +1,11 @@
-SimpleDateFormat ft new SimpleDateFormat ("yyyy.MM.dd '\n\b at' hh:mm:ssa ");
+import java.util.*;
+import java.text.*;
 
-System.out.println("Current Date:" + ft.format(date));
+
+
+Date date = new Date();
+System.out.println("\n");
+
+SimpleDateFormat ft = new SimpleDateFormat ("yyyy.MM.dd '\nb at' hh:mm:ss a ");
+
+System.out.println("current date and time " + ft.format(date));
