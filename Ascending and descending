@@ -1,26 +1,26 @@
-Scanner in new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-int n, i, j, temp;
+    int size , temp;
 
-System.out.print("Enter the size of the array: ");
+    System.out.print("Enter the size of the array: ");
 
-n= scan.nextInt();
+    size= in.nextInt();
 
-int arr[] = new int[n];
+int arr[] = new int[size];
 
-System.out.println("Enter"+n+" Numbers: "); 
+System.out.println("Enter"+size+" Numbers: "); 
 
-for(int i=0; i<n; i++){
+for(int i=0; i<size; i++){
 
 arr[i] = in.nextInt(); }
 
-for(int i=0; i<(n-1); i++)
+for(int i=0; i<(size-1); i++){
 
-for(int j=0; j<(n-1-1); j++) {
+for(int j=0; j<(size-1-1); j++) {
 
 if (arr[j] > arr[j+1]){
 
-temp arr[j];
+temp = arr[j];
 
 arr[j]= arr[j+1];
 
@@ -29,7 +29,7 @@ arr[j+1] = temp;
    } 
   }
 
-for(i=0; i<n; i++) {
+for(int i=0; i<size; i++) {
 
 System.out.print(arr[i]); 
 
@@ -40,7 +40,7 @@ System.out.println("");
 
 System.out.print("Sorted List in dscending Order: \n"); 
 
-for(i-n-1; 1>=0; 1--)
+for(int i=size-1; i>=0; i--){
 
 System.out.print(arr[1]);
 
